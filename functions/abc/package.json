@@ -1,0 +1,44 @@
+{
+  "name": "abc",
+  "version": "1.0.0",
+  "description": "abc云函数",
+  "main": "index.js",
+  "scripts": {
+      "dev": "NODE_ENV=local nodemon index.js",
+      "deploy": "tcb functions:deploy abc",
+      "update": "tcb function:code update abc",
+      "service": "tcb service:create -p /abc -f abc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+      "koa": "^2.11.0",
+      "koa-body": "^4.1.1",
+      "koa-bodyparser": "^4.3.0",
+      "koa-jsonp": "^2.0.2",
+      "koa-logger": "^3.2.1",
+      "koa-mount": "^4.0.0",
+      "koa-router": "^8.0.8",
+      "koa-send": "^5.0.0",
+      "koa-static": "^5.0.0",
+      "koa-view": "^2.1.3",
+      "lodash": "^4.17.15",
+      "serverless-http": "^2.3.2",
+      "tcb-admin-node": "^1.21.1"
+  },
+  "devDependencies": {
+      "nodemon": "^2.0.3"
+  },
+  "nodemonConfig": {
+      "ext": "js",
+      "restartable": "rs",
+      "verbose": true,
+      "ignore": [
+          "node_modules/**",
+          "test/**",
+          ".git",
+          ".log"
+      ]
+  }
+}

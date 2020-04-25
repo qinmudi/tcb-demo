@@ -1,0 +1,14 @@
+{
+  "name": "tcb-demo",
+  "version": "1.0.0",
+  "description": "- nodejs云开发示例",
+  "main": "index.js",
+  "scripts": {
+    "fd": "tcb functions:deploy",
+    "update": "tcb functions:code:update",
+    "sc": "tcb service:create"
+  },
+  "keywords": [],
+  "author": "qinmudi",
+  "license": "ISC"
+}
